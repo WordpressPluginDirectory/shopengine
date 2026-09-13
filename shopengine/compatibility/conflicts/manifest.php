@@ -7,7 +7,12 @@ use ShopEngine\Widgets\Widget_Helper;
 class Manifest {
 
 	public function init() {
-		
+
+		// Check if the WooCommerce Stripe Gateway plugin is active
+		if (is_plugin_active('woocommerce-gateway-stripe/woocommerce-gateway-stripe.php')) {
+			add_filter('wc_stripe_express_checkout_params', [$this, 'fix_stripe_express_checkout_has_block']);
+		}
+
 		add_action('elementor/element/before_section_start', [$this, 'elementor_editor_conflict'], 10, 2);
 		add_action('elementor/element/before_section_start', function ($element) {
 
@@ -73,8 +78,65 @@ class Manifest {
 				}
 			}, 10);
 		}
+
+
+		// Check if the Unlimited Elements for Elementor Pro plugin is active
+		if (is_plugin_active('unlimited-elements-for-elementor-premium/unlimited-elements-pro.php')) {
+			
+			add_action('elementor/init', [$this, 'remove_unlimited_elements_background_hooks'], 999);
+			
+		}
 		
 	}	
+
+	/**
+	 * Stripe skips mounting Express Checkout when has_block is true, assuming
+	 * WC Blocks markup exists. Force it false when ShopEngine rendered instead.
+	 */
+	public function fix_stripe_express_checkout_has_block($params) {
+
+		global $is_used_shopengine_template;
+
+		if ($is_used_shopengine_template && (is_cart() || is_checkout())) {
+			$params['has_block'] = false;
+		}
+
+		return $params;
+	}
+
+	// This function will remove the background overlay hooks added by Unlimited Elements for Elementor Pro plugin
+	public function remove_unlimited_elements_background_hooks() {
+		$hooks = array(
+			'elementor/element/section/section_background_overlay/after_section_end',
+			'elementor/element/container/section_background_overlay/after_section_end',
+		);
+
+		global $wp_filter;
+
+		foreach ($hooks as $hook) {
+			if (empty($wp_filter[$hook]) || empty($wp_filter[$hook]->callbacks)) {
+				continue;
+			}
+
+			foreach ($wp_filter[$hook]->callbacks as $priority => $callbacks) {
+				foreach ($callbacks as $callback) {
+					$function = isset($callback['function']) ? $callback['function'] : null;
+
+					if (!is_array($function) || empty($function[0]) || empty($function[1])) {
+						continue;
+					}
+
+					if (!is_object($function[0])) {
+						continue;
+					}
+
+					if (get_class($function[0]) === 'UniteCreatorElementorIntegrate' && $function[1] === 'onSectionStyleControlsAdd') {
+						remove_action($hook, $function, $priority);
+					}
+				}
+			}
+		}
+	}
 
 	public function elementor_editor_conflict($element, $section_id) {
 

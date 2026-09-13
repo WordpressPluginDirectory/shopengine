@@ -14,6 +14,7 @@ use ShopEngine\Libs\License\License_Route;
 use ShopEngine\Libs\Rating\Rating;
 use ShopEngine\Libs\Updater\Init as Updater;
 use ShopEngine\Modules\Manifest as Module_Manifest;
+use ShopEngine\Utils\Feedback\Plugin_Unsubscribe;
 use ShopEngine\Widgets\Manifest;
 
 
@@ -85,6 +86,8 @@ final class Plugin {
 		if($error) {
 			return;
 		}
+
+
 		
 		add_filter("plugin_action_links_shopengine/shopengine.php", function ($links) {
 		$free = esc_html__("Go To Shopengine","shopengine");
@@ -129,7 +132,9 @@ final class Plugin {
 		 *
 		 */
 		new License_Route();
-
+		
+		// Initialize deactivation feedback modal
+        new \ShopEngine\Utils\Feedback\Plugin_Unsubscribe();
 		/**
 		 * Run pro plugin updater here....
 		 *
@@ -177,6 +182,13 @@ final class Plugin {
 			}
 
         }
+
+		// Cart validation compatibility with WC Min Max Quantity plugin
+
+		if ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'woo-min-max-quantity-step-control-single/wcmmq.php' ) ) {
+			
+			add_filter( 'wcmmq_cart_validation_check', [ $this, 'shopengine_wcmmq_cart_validation_compat' ], 10, 2 );
+		}
 
 
 		//Loading public scripts and styles
@@ -238,9 +250,9 @@ final class Plugin {
 			*/
 			\ShopEngine\Wpmet\Libs\Plugins::instance()->init('shopengine')
 			->set_parent_menu_slug('shopengine-settings')
-			->set_submenu_name('Our Plugins')
-			->set_section_title('Get More out of Your WooCommerce Website!')
-			->set_section_description('Install other plugins from us and take your WooCommerce site to the next level for absolutely free!')
+			->set_submenu_name(esc_html__('Our Plugins', 'shopengine'))
+			->set_section_title(esc_html__('Get More out of Your WooCommerce Website!', 'shopengine'))
+			->set_section_description(esc_html__('Install other plugins from us and take your WooCommerce site to the next level for absolutely free!', 'shopengine'))
 			->set_items_per_row(4)
 			->set_plugins(
 			[
@@ -251,13 +263,6 @@ final class Plugin {
 					'desc' => esc_html__('All-in-one Elementor addon trusted by 1 Million+ users, makes your website builder process easier with ultimate freedom.', 'shopengine'),
 					'docs' => 'https://wpmet.com/doc/elementskit/',
 				],
-				'getgenie/getgenie.php' => [
-					'name' => esc_html__('GetGenie', 'shopengine'),
-					'url'  => 'https://wordpress.org/plugins/getgenie/',
-					'icon' => $apps_img_path.'getgenie.gif',
-					'desc' => esc_html__('Your personal AI assistant for content and SEO. Write content that ranks on Google with NLP keywords and SERP analysis data.', 'shopengine'),
-					'docs' => 'https://getgenie.ai/docs/',
-				],
 				'gutenkit-blocks-addon/gutenkit-blocks-addon.php' => [
 					'name' => esc_html__('GutenKit', 'shopengine'),
 					'url'  => 'https://wordpress.org/plugins/gutenkit-blocks-addon/',
@@ -265,12 +270,47 @@ final class Plugin {
 					'desc' => esc_html__('Gutenberg blocks, patterns, and templates that extend the page-building experience using the WordPress block editor.', 'shopengine'),
 					'docs' => 'https://wpmet.com/doc/gutenkit/',
 				],
+				'rox-dynamic-cpt-fields-engine/rox-dynamic-cpt-fields-engine.php' => [
+					'name' => esc_html__('Rox Dynamic CPT Fields', 'shopengine'),
+					'url'  => 'https://wordpress.org/plugins/rox-dynamic-cpt-fields-engine/',
+					'icon' => 'https://ps.w.org/rox-dynamic-cpt-fields-engine/assets/icon-256x256.jpeg?rev=3538537',
+					'desc' => esc_html__('Build custom post types, fields, taxonomies, and dynamic frontend layouts for WordPress, with zero coding and full AI-generated schema.', 'shopengine'),
+					'docs' => 'https://wpmet.com/doc/rox-dynamic-cpt-fields-engine/',
+            	],
+             	'rox-appointment-booking/rox-appointment-booking.php' => [
+					'name' => esc_html__('Rox Appointment Booking', 'shopengine'),
+					'url'  => 'https://wordpress.org/plugins/rox-appointment-booking/',
+					'icon' => 'https://ps.w.org/rox-appointment-booking/assets/icon-256x256.png?rev=3575641',
+					'desc' => esc_html__('Manage bookings, agents, payments, and calendars from one dashboard! A complete appointment and scheduling solution for WordPress.', 'shopengine'),
+					'docs' => 'https://wpmet.com/doc/rox-appointment-booking/',
+            	],
 				'metform/metform.php' => [
 					'name' => esc_html__('MetForm', 'shopengine'),
 					'url'  => 'https://wordpress.org/plugins/metform/',
 					'icon' => $apps_img_path. 'metform.png',
 					'desc' => esc_html__('Drag & drop form builder for Elementor to create contact forms, multi-step forms, and more — smoother, faster, and better!', 'shopengine'),
 					'docs' => 'https://wpmet.com/doc/metform/',
+				],
+				'popup-builder-block/popup-builder-block.php' => [
+					'name' => esc_html__('PopupKit', 'shopengine'),
+					'url'  => 'https://wordpress.org/plugins/popup-builder-block/',
+					'icon' => 'https://ps.w.org/popup-builder-block/assets/icon-256x256.png?rev=3316844',
+					'desc' => esc_html__('Design popups that convert, right in your WordPress dashboard.', 'shopengine'),
+					'docs' => 'https://wpmet.com/doc/popupkit/',
+            	],
+				'table-builder-block/table-builder-block.php' => [
+					'name' => esc_html__('TableKit', 'shopengine'),
+					'url'  => 'https://wordpress.org/plugins/table-builder-block/',
+					'icon' => 'https://ps.w.org/table-builder-block/assets/icon-256x256.png?rev=3509972',
+					'desc' => esc_html__('Fully Customizable. Multi-Media Integration. Synch Any Data Files. All Within Block Editor.', 'shopengine'),
+					'docs' => 'https://wpmet.com/doc/tablekit/',
+				],
+				'getgenie/getgenie.php' => [
+					'name' => esc_html__('GetGenie', 'shopengine'),
+					'url'  => 'https://wordpress.org/plugins/getgenie/',
+					'icon' => $apps_img_path.'getgenie.gif',
+					'desc' => esc_html__('Your personal AI assistant for content and SEO. Write content that ranks on Google with NLP keywords and SERP analysis data.', 'shopengine'),
+					'docs' => 'https://getgenie.ai/docs/',
 				],
 				'emailkit/EmailKit.php' => [
 					'name' => esc_html__('EmailKit', 'shopengine'),
@@ -286,34 +326,12 @@ final class Plugin {
 					'desc' => esc_html__('Add social share, login, and engagement counter — unified solution for all social media with tons of different styles for your website.', 'shopengine'),
 					'docs' => 'https://wpmet.com/doc/wp-social/',
 				],
-				'wp-ultimate-review/wp-ultimate-review.php' => [
-					'name' => esc_html__('WP Ultimate Review', 'shopengine'),
-					'url'  => 'https://wordpress.org/plugins/wp-ultimate-review/',
-					'icon' => $apps_img_path . 'ultimate-review.png',
-					'desc' => esc_html__('Collect and showcase reviews on your website to build brand credibility and social proof with the easiest solution.','shopengine'),
-					'docs' => 'https://wpmet.com/doc/wp-ultimate-review/',
-				],
-				'wp-fundraising-donation/wp-fundraising.php' => [
-					'name' => esc_html__('FundEngine', 'shopengine'),
-					'url'  => 'https://wordpress.org/plugins/wp-fundraising-donation/',
-					'icon' => $apps_img_path . 'fundengine.png',
-					'desc' => esc_html__('Create fundraising, crowdfunding, and donation websites with PayPal and Stripe payment gateway integration.', 'shopengine'),
-					'docs' => 'https://wpmet.com/doc/fundengine/',
-				],
 				'blocks-for-shopengine/shopengine-gutenberg-addon.php' => [
 					'name' => esc_html__('Blocks for ShopEngine', 'shopengine'),
 					'url'  => 'https://wordpress.org/plugins/blocks-for-shopengine/',
 					'icon' => $apps_img_path. 'shopengine.gif',
 					'desc' => esc_html__('All in one WooCommerce solution for Gutenberg! Build your WooCommerce pages in a block editor with full customization.', 'shopengine'),
 					'docs' => 'https://wpmet.com/doc/shopengine/shopengine-gutenberg/',
-				],
-				'genie-image-ai/genie-image-ai.php' => [
-					'name' => esc_html__('Genie Image', 'shopengine'),
-					'url'  => 'https://wordpress.org/plugins/genie-image-ai/',
-					'icon' => $apps_img_path . 'genie-image.png',
-					'desc' => esc_html__('AI-powered text-to-image generator for WordPress with OpenAI’s DALL-E 2 technology to generate high-quality images in one click.
-					', 'shopengine'),
-					'docs' => 'https://getgenie.ai/docs/',
 				],
 			]
 			)
@@ -365,6 +383,24 @@ final class Plugin {
 		//it will register an option in customizer for woocommerce products catelog. It's related with our Arcive Products widget.
 		Register_Settings::instance()->init();
 	}
+
+	public function shopengine_wcmmq_cart_validation_compat( $check, $request ) {
+		
+		$cart_widget_flag = isset( $_REQUEST['shopengine_cart_widget'] )
+			? sanitize_text_field( wp_unslash( $_REQUEST['shopengine_cart_widget'] ) )
+			: '';
+		$cart_widget_nonce = isset( $_REQUEST['shopengine_cart_widget_nonce'] )
+			? sanitize_text_field( wp_unslash( $_REQUEST['shopengine_cart_widget_nonce'] ) )
+			: '';
+
+		if ( $cart_widget_flag === '1' && wp_verify_nonce( $cart_widget_nonce, 'shopengine_cart_widget' ) ) {
+			return false; // Skip WC MMQ validation for verified ShopEngine cart widget requests
+		}
+		return $check; // Proceed with normal validation for other requests
+	}
+
+
+
 
 
 	// add async and defer attributes to enqueued scripts

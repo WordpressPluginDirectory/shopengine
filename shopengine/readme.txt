@@ -1,21 +1,22 @@
-=== ShopEngine Elementor WooCommerce Builder Addon – All in One WooCommerce Solution ===
+=== ShopEngine Elementor WooCommerce Builder Addon – All in One WooCommerce Solution with eCommerce Templates & Woo Widgets ===
 Contributors: Roxnor, Ataurr, aion11
-Tags: WooCommerce Builder, WooCommerce add-on, Elementor WooCommerce, Cross-sell, Shopping Cart, Variation Swatches, WooCommerce Checkout, WooCommerce Product
-Tested up to: 6.9
-Stable tag: 4.8.9
+Tags: WooCommerce Builder, WooCommerce addons, Elementor WooCommerce, Cross-sell, Variation Swatches, WooCommerce Checkout, WooCommerce Product
+Requires at least: 6.0
+Tested up to: 7.1
+Stable tag: 4.9.6
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
- WooCommerce builder for Elementor and Gutenberg. It offers product templates, product sliders, shopping cart, quick view, Woo wishlist, product filter, and more Woo features.
+ WooCommerce builder for Elementor & Gutenberg, offering product templates, product sliders, shopping cart, quick view, Woo Wishlist, product filter.
 
 == Description ==
 
-Are you using multiple plugins to make a WooCommerce store with a shop page builder, ready-made product templates, WooCommerce quick view, shopping cart, Woo wishlist, product comparison, promotional product slider, cross-sell, variation swatches, and more?
+[ShopEngine](https://wpmet.com/plugin/shopengine/?utm_source=org&utm_medium=readme) is the most complete WooCommerce Builder for Elementor. The all-in-one Elementor WooCommerce addon that replaces dozens of separate plugins. Build every page of your WooCommerce store: shop page builder, cart page builder, checkout builder, single product builder, and My Account builder, all with drag-and-drop.
 
-Well, not anymore! You don’t have to slow down your WooCommerce store.
+Get **70+ WooCommerce widgets, 40+ eCommerce templates, and 20+ WooCommerce addons** including Woo Wishlist, WooCommerce Quick View, Product Comparison, Cross Sell popup, Variation Swatches, Flash Sale Countdown, and Currency Switcher. Everything all in one Woo Builder.
 
-  Presenting [ShopEngine](https://wpmet.com/plugin/shopengine/?utm_source=org&utm_medium=readme), all-in-one WooCommerce builder for Elementor and Gutenberg!
+This comprehensive WooCommerce page builder also supports the Gutenberg block editor area!
 
 https://youtu.be/vjfrA-xI8F4
 
@@ -23,7 +24,7 @@ With the ShopEngine Woobuilder plugin, you can enjoy all the Woo features and fu
 
 [ShopEngine Addons](https://wpmet.com/plugin/shopengine/modules/?utm_source=org&utm_medium=readme) | [ShopEngine Templates](https://wpmet.com/plugin/shopengine/templates/?utm_source=org&utm_medium=readme)  | [Support](http://account.wpmet.com/support-help/?utm_source=org&utm_medium=readme) | [Docs](https://wpmet.com/doc/getting-started-with-shopengine-installation/?utm_source=org&utm_medium=readme) | [Check Roadmap & Request a Feature](https://wpmet.com/plugin/shopengine/roadmaps?utm_source=org&utm_medium=readme#ideas) | [Purchase ShopEngine Pro](https://wpmet.com/plugin/shopengine/pricing/?utm_source=org&utm_medium=readme)
 
-## ShopEngine empowering 80,000+ WooCommerce users 
+## 100,000+ Business Owners are building stores with ShopEngine WooCommerce Builder
 ShopEngine’s WooCommerce features work smoothly with both Elementor and the WordPress block editor. You can drag and drop widgets, add-ons, and templates to build the store layout you want without any hassle.
 
 It’s one of the most complete WooCommerce builders for Elementor and Gutenberg, giving store creators a flexible and powerful toolkit to design their shops.
@@ -45,6 +46,7 @@ It’s one of the most complete WooCommerce builders for Elementor and Gutenberg
 ⭐ **Filterable Product List** to sort products with real-time filters.
 
 ShopEngine **overrides default WooCommerce page** designs with custom, **sales-focused** designs and features. 
+
 ✅ WooCommerce **Shop page** builder.
 ✅ **Shopping Cart** builder.
 ✅ **Single Product** page builder.
@@ -54,23 +56,26 @@ ShopEngine **overrides default WooCommerce page** designs with custom, **sales-f
 ✅ **Order Confirmation / Thank You** page builder.
 ✅ **WooCommerce Account Dashboard** builder.
 
-This WooCommerce Builder also includes...
+This Woo Builder also includes…
 
-✔️ **Multi-language** supported builder	.
-✔️ **Compatible** with all popular WordPress themes.
-✔️ Works with Free **Elementor and WooCommerce**.
-✔️ Compatible with **WordPress Gutenberg Blocks**.
-✔️ **Filter and Pagination** based on AJAX.
-✔️ **No Coding Skills** Required.
-✔️ Top-notch and **Dedicated Support Team**.
+✔️ Multi-language & RTL supported WooCommerce addon
+✔️ Compatible with all popular WordPress themes 
+✔️ Works with free Elementor - no Elementor Pro required
+✔️ Gutenberg block editor compatible WooCommerce addon
+✔️ AJAX-based product filter and pagination - no page reload
+✔️ 40+ ready-made eCommerce templates - import in one click
+✔️ No coding skills required - full drag-and-drop Woo Builder
+✔️ HPOS (High Performance Order Storage) compatible
+✔️ WPML & Polylang multilingual ready
+✔️ 24/7 dedicated support team
 
-## ✨ Pre-built WooCommerce Templates by ShopEngine, An Instant No-code Solution for WooCommerce Builder
+### 📃 40+ WOOCOMMERCE TEMPLATES – ELEMENTOR ADDONS FOR WOOCOMMERCE AND NO-CODE SHOP PAGE BUILDER SHOPENGINE
 
 **📃** [Shop Page](https://wpmet.com/plugin/shopengine/templates/shop-page/?utm_source=org&utm_medium=readme): Display products with tons of customizable components of this WooCommerce shop page builder.
 
 **📃** [Single Product Page](https://wpmet.com/plugin/shopengine/templates/single-page/?utm_source=org&utm_medium=readme): Showcase specification of a single WooCommerce product.
 
-**📃** [Shopping Cart Page](https://wpmet.com/plugin/shopengine/templates/cart-page/?utm_source=org&utm_medium=readme): Show a user-friendly shopping cart and empty cart page for your customers.
+**📃** [WooCommerce Cart Page](https://wpmet.com/plugin/shopengine/templates/cart-page/?utm_source=org&utm_medium=readme): Design your cart page WooCommerce shopping cart, empty cart, cross-sell.
 
 **📃** [Checkout Template](https://wpmet.com/plugin/shopengine/templates/checkout-page/?utm_source=org&utm_medium=readme): Enable smooth payment process with various styles like multistep, banner, and columnized  in WooCommerce checkout page.
 
@@ -92,8 +97,9 @@ This WooCommerce Builder also includes...
 
 **📃** [Quick View Builder Template](https://wpmet.com/plugin/shopengine/templates/quick-view/?utm_source=org&utm_medium=readme): Shoppers get a quick overview of WooCommerce products.
 
-## ✨ ShopEngine WooCommerce Addons for Advanced Features
-ShopEngine comes with 20+ WooCommerce addons to help users build dynamic WooCommerce websites without any hassle.
+## ✨ Elementor Addons for WooCommerce – Elementor WooCommerce Addons
+
+ShopEngine comes with **20+ WooCommerce addons** to help users build dynamic WooCommerce websites without any hassle.
 
 https://youtu.be/QnsmuVmTJww?si=LBNZ1KewYa4777Yr
 
@@ -165,7 +171,7 @@ https://youtu.be/XOZSqWLjgyk?si=bSjzwk0vMz4KitvQ
 
 **🔷** Set up coupons for a country-specific state/region using ShopEngine, Elementor WooCommerce builder addon's [Advanced coupons add-on](https://wpmet.com/plugin/shopengine/modules/advanced-coupon/?utm_source=org&utm_medium=readme). Only customers in those areas can use the coupon code.
 
-**🔷** [Cross-Sell Popup](https://wpmet.com/plugin/shopengine/modules/cross-sell-popup/?utm_source=org&utm_medium=readme) module of the ShopEngine WooCommerce template builder will show product recommendations based on your customers' requirements for other products after adding products to the cart.
+**🔷** [Cross-Sell Popup](https://wpmet.com/plugin/shopengine/modules/cross-sell-popup/?utm_source=org&utm_medium=readme) WooCommerce addon shows targeted cross-sell product recommendations the moment a customer adds to cart. This WooCommerce template boosting average order value automatically. The most effective cross-sell WooCommerce builder for Elementor stores.
 
 **🔷** [Avatar add-on](https://wpmet.com/plugin/shopengine/modules/avatar/?utm_source=org&utm_medium=readme) makes websites' user profiles more appealing and personalized by allowing them to add an image and other user information with different customization options.
 
@@ -175,8 +181,11 @@ ShopEngine offers 70+ WooCommerce Elementor Widgets to build attractive single-p
 
 https://youtu.be/S0Jx2VbU_gk?si=O15FUjVoeycal6_Q
 
-### Modernize Shopping Cart Page Builder With ShopEngine WooCommerce Widgets
-Get some specially designed helpful widgets of ShopEngine WooCommerce cart page builder to enhance the default WooCommerce cart page and reduce the cart abandonment rate.
+
+
+###  WooCommerce Cart Page Builder – Redesign Cart Page WooCommerce Shop
+
+Get WooCommerce widgets designed for customizing WooCommerce cart page builder to enhance the default cart page of WooCommerce and reduce the cart abandonment rate.
 
 https://youtu.be/wT2U3UKcv38?si=pdvwuPRB1Z7a9KFv
 
@@ -210,7 +219,7 @@ WooCommerce shop page design impacts your eCommerce revenue. ShopEngine has been
  
 https://youtu.be/SVccRBK4XqQ?si=qAxam5ZhZXhHGJ-Z
 
-### ❤️ ShopEngine WooCommerce Builder Widgets (FREE)
+### ❤️ ShopEngine WooCommerce Widgets – Free Builder
 👉 WooCommerce Product Review Widget
 👉 WooCommerce Product Share Widget
 👉 WooCommerce Breadcrumbs Widget
@@ -226,6 +235,7 @@ https://youtu.be/SVccRBK4XqQ?si=qAxam5ZhZXhHGJ-Z
 👉 Archive Description WooCommerce  Widget 
 👉 Archive Products WooCommerce Widget
 👉 WooCommerce Archive Result Count Widget
+👉 Product per Page Widget 
 👉 Archive View Mode WooCommerce Elementor Widget
 👉 WooCommerce Order By Filter Widget
 👉 WooCommerce Product List Widget
@@ -242,33 +252,48 @@ https://youtu.be/SVccRBK4XqQ?si=qAxam5ZhZXhHGJ-Z
 👉 WooCommerce Filterable Product List Widget
 👉 WooCommerce Product Category List Widget
 👉 WooCommerce Recently Viewed Products Widget
+👉 Product Stock Widget 
+👉 Breadcrumbs Widget 
+👉 Notice Widget
+👉 QR Code Widget
+👉 Call for Price Widget 
 
-### 🔥 ShopEngine WooCommerce Builder Widgets (PRO)
-➡️ WooCommerce Product Size Chart Widget
-➡️ WooCommerce Product Filters Widget
-➡️ Checkout Order pay WooCommerce Widget
-➡️ WooCommerce Order Details Widget
-➡️ Thank You Address Details WooCommerce Widget
-➡️ WooCommerce Order Confirm Widget
-➡️ WooCommerce Order Thank You Widget
-➡️ WooCommerce  Shop Account Address Widget
-➡️ WooCommerce  Website Account Dashboard Widget
-➡️ WooCommerce  Shop Account Navigation Widget
-➡️ WooCommerce  Website Account Orders Widget
-➡️ WooCommerce Shop Account Order - Details Widget
-➡️ WooCommerce  Shop Account Downloads Widget
-➡️ WooCommerce  Website Account Logout Widget
-➡️ WooCommerce  Shop Account Details Widget
-➡️ WooCommerce  Website Account Form Login Widget
-➡️ WooCommerce  Website Account Register Form Widget
-➡️ Avatar WooCommerce Builder Widget
-➡️ WooCommerce  Product Categories Widget
-➡️ Currency Switcher WooCommerce Widget
-➡️ Flash Sale WooCommerce Products Widget
-➡️ Best Selling WooCommerce Products Widget
-➡️ WooCommerce Products Comparison Button Widget
-➡️ WooCommerce Advanced Coupon Widget
-➡️ WooCommerce Website Vacation Widget
+
+### 🔥 ShopEngine WooCommerce Widgets – Pro Builder
+➡️ **WooCommerce Product Size Chart Widget** – Display size guides for product variations
+➡️ **WooCommerce Product Filters Widget** – Filter products by price and attributes
+➡️ **Checkout Order Pay Widget** – Process payment for pending orders
+➡️ **WooCommerce Order Details Widget** – Show complete order information and status
+➡️ **Thank You Address Details Widget** – Display customer billing and shipping addresses
+➡️ **WooCommerce Order Confirm Widget** – Confirm order placement with custom message
+➡️ **WooCommerce Order Thank You Widget** – Show appreciation message after purchase
+➡️ **WooCommerce Shop Account Address Widget** – Manage customer billing and shipping addresses
+➡️ **WooCommerce Website Account Dashboard Widget** – Display personalized customer account overview
+➡️ **WooCommerce Shop Account Navigation Widget** – Navigate between account pages easily
+➡️ **WooCommerce Website Account Orders Widget** – View all customer order history
+➡️ **WooCommerce Shop Account Order Details Widget** – Show detailed single order information
+➡️ **WooCommerce Shop Account Downloads Widget** – Access downloadable products and files
+➡️ **WooCommerce Website Account Logout Widget** – Log out from customer account
+➡️ **WooCommerce Shop Account Details Widget** – Edit customer account information details
+➡️ **WooCommerce Website Account Form Login Widget** – Customer login form for accounts
+➡️ **WooCommerce Website Account Register Form Widget** – New customer registration form
+➡️ **Avatar WooCommerce Builder Widget** – Customize user profile picture display
+➡️ **WooCommerce Product Categories Widget** – Display product categories with images
+➡️ **Currency Switcher WooCommerce Widget** – Switch between multiple store currencies
+➡️ **Flash Sale WooCommerce Products Widget** – Show limited-time flash sale products
+➡️ **Best Selling WooCommerce Products Widget** – Display top-selling products showcase
+➡️ **WooCommerce Products Comparison Button Widget** – Add products to comparison list
+➡️ **WooCommerce Advanced Coupon Widget** – Create location-based coupon codes
+➡️ **WooCommerce Website Vacation Widget** – Display vacation or holiday notices
+➡️ **Product Size Charts Widget** – Show product size measurement charts
+➡️ **Product Filters Widget** – Advanced AJAX product filtering options
+➡️ **Checkout Order Pay Widget** – Complete payment for existing orders
+➡️ **Reset Password Form Widget** – Reset forgotten password securely
+➡️ **Create New Password Form Widget** – Set new password after reset
+➡️ **Shipping Address Widget** – Display and edit shipping address
+➡️ **Billing Address Widget** – Display and edit billing address
+➡️ **Vacation Notice Widget** – Notify customers about store closures
+
 
 ### ✨ SHOPENGINE WOOCOMMERCE GUTENBERG BLOCKS ADD-ON
 
@@ -280,7 +305,7 @@ You will get fully ready **5+ templates with 36+ blocks, 4 advanced add-on** inc
 
 ### 😇 BACKED BY A TRUSTED TEAM
 
-ShopEngine is brought to you by **Wpmet, a name trusted by 10,00,000+ satisfied users worldwide**.
+ShopEngine is a WooCommerce addon for Elementor by **Wpmet, trusted by 1,000,000+ WordPress users worldwide**.
 
 ### 🎯 IT’S TIME TO GET STARTED WITH SHOPENGINE
 Learn [How to Install and Use ShopEngine](https://wpmet.com/doc/getting-started-with-shopengine-installation/?utm_source=org&utm_medium=readme)
@@ -311,6 +336,49 @@ Learn [How to Install and Use ShopEngine](https://wpmet.com/doc/getting-started-
 **Check out** [Tutorials, Tips & Tricks](https://wpmet.com/blog?utm_source=org&utm_medium=readme)! 
 
 == Changelog ==
+v4.9.6// 13-09-2026
+Fixed: Stored Cross-Site Scripting (XSS) vulnerability in the Product-Title-widget.
+
+v4.9.5// 20-08-2026
+Improved: Archive product list view mode.
+Improved: Product Filter widget.
+Fixed: Privilege escalation vulnerability allowing unauthorized WordPress option changes.
+
+v4.9.4// 11-08-2026
+Added: Translation support for missing text.
+Improved: Admin dashboard UI/UX.
+
+v4.9.3// 09-08-2026
+Improved: Archive product widget controls.
+Improved: Product list widget controls.
+Improved: Checkout template UI.
+Fixed: Express Checkout element not displaying on Cart and Checkout pages when using ShopEngine templates.
+Fixed: WooCommerce Product Schema (JSON-LD) missing when using ShopEngine Single Product Templates.
+Fixed: CSRF vulnerability in the ShopEngine checkout login endpoint.
+Fixed: Hard-coded and untranslatable strings.
+
+
+v4.9.2// 12-07-2026
+Improved: Onboarding process.
+Fixed: Conflict issue with envo-shop theme.
+
+v4.9.1// 30-06-2026
+Added: Payment methods template support.
+Improved: Archive product widget controllers.
+Fixed: Resolved an issue where ShopEngine classes were incorrectly being added to the body tag.
+
+v4.9.0// 08-06-2026
+Added: Wishlist template support.
+Added: Individual controllers for Cart Table widget cart footer buttons. 
+Added: Controller for the coupon style toggle.
+Added: Cart table remove button position controller.
+Added: Cart item quantity hide/show controller.
+Improved: Builder template drawer.
+Fixed: Quantity number hover color controller.
+Fixed: Cart template quantity issue caused by Min/Max plugin conflict.
+Fixed: Issue where cart quantity could not be decreased after clicking “Update Cart” in the cart template.
+Fixed: Conflict issue with Unlimited Elements For Elementor plugin.
+
 v4.8.9// 07-04-2026
 Improved: Admin dashboard UI.
 Fixed: Issue with pre-built template importing.
@@ -941,108 +1009,6 @@ Fixed: Minor styling issue for Product Image Widget.
 Fixed: Theme Compatibility issues for My Account Navigation Widget.
 Fixed: Archive Products Widget Sale Badge, WooCommerce Product Grid, product pagination and archive page with pagination styling for Hestia Theme.
 
-v1.1.0 // 05-07-2021
-Added: WooCommerce Product Grid Background control for WooCommerce Product List Widget.
-Added: Add to cart buttons equal controls.
-Added: Product review dummy review added for editor proview.
-Added: Add to cart widget quick checkout controls.
-Fixed: Ratings styling for Archive Products Widget.
-Fixed: Action buttons in different positions and Ratings was broken in Flatsome theme for Archive Products Widget.
-Fixed: Pagination styling was broken in Woodmart theme for Archive Products Widget.
-Fixed: Theme Compatibility issues.
-Fixed: Conflict with related products.
-Fixed: Cross sell products Markup Issues.
-Fixed: Shipping method markup conflicts.
-Fixed: Checkout login form markup Issues.
-Fixed: Checkout order review markup Issues.
-Fixed: My Account Navigation Conflicts.
-Fixed: Product rating star width issues.
-Fixed: Add to cart icon selector instead of SVG and fix css.
-Fixed: Archive products icon selector instead of SVG and fix CSS.
-Fixed: Add to cart sold individually product input plus minus.
-Fixed: Cart table sold individually, product input plus minus.
-Fixed: PHP Error on Logout Page.
-Fixed: Markup Override issues.
-Fixed: Archive products widget conflict with Storefront theme.
-Fixed: CSS conflict issues fixed on Empty Cart page builder.
-Fixed: Archive page with paginationeditor mode markup issue with Porto theme, Oceanwp theme, Woodmart theme.
-Improved: WooCommerce Category and Product List widget select 2 background, color, border style.
-Improved: WooCommerce builder Quick view, WooCommerce Product Comparison, Woo wishlist, womparison change SVG icon to plugin icon.
-
-v1.0.0 // 23-06-2021
-# Ready to use in Production.
-Added: Ready to use Starter Templates. More will be added to the collection regularly.
-Added: Blank Template support.
-Added: General WooCommerce Category and Product List for Site Wide WooCommerce builder widgets.
-Added: Hooks for Product Share Widget.
-Added: Custom Ordering controls to Archive Product widget.
-Added: Hover Style for Archive Products.
-Added: Field Visibility controls for Checkout Form Billing and Shipping Forms.
-Added: Average Rating Count for Product Rating Widget.
-Improved: Performance boost.
-Improved: Major Theme Compatibility support for All WooCommerce widgets.
-Improved: Reordered Controls for Product Filters, Archive Products and Advanced Search WooCommerce builder widgets.
-Improved: Improved Editor view support for All WooCommerce widgets.
-Improved: Reordered Controls for Product Image Widget.
-Fixed: Fatal error when Empty cart for Cross Sells Widget.
-Fixed: Hide Deal Products when Time is over.
-Fixed: Theme Compatibility issues for Archive Template WooCommerce widgets.
-Fixed: Theme Compatibility issues for Single page builder Template WooCommerce widgets.
-Fixed: External font from WooCommerce Product Comparison add-on.
-Fixed: Theme Compatibility for Archive Products.
-Fixed: Default Controls for Cart Table Widget.
-Fixed: Theme Compatibility for Cross Sells Widget.
-Fixed: Minor issues for WooCommerce Product Comparison button Widget.
-Fixed: Theme Compatibility issues for WooCommerce Product Tabs Widget.
-Fixed: Alignment Controls for Product Price Widget.
-Fixed: Controls and Styling issues for Breadcrumbs Widget.
-Fixed: Controls and Styling issues for Product Price Widget.
-Fixed: Styling issue for Alert Messages.
-Fixed: Duplicate Control ID for Archive Products Widget.
-Fixed: Spelling mistakes for Dashboard.
-Fixed: WooCommerce image gallery styling for Enable / Disable WooCommerce Product Gallery widget.
-Fixed: Deprecated WooCommerce Elementor method _register_controls() replaced.
-Fixed: JS Script issue for Checkout Form Login Widget.
-Fixed: Customize WooCommerce Buttons Color,  Deprecated Color,and Typography Scheme methods removed.
-Fixed: Console error in case of no Up Sells for Up Sells Widget.
-Fixed: Alignment issue for Add To Cart Widget.
-
-v0.1.4-beta // 18-04-2021
-Added: Recently Viewed Products.
-Added: Filterable Product List.
-Added: WooCommerce builder Category and Product List Filter option to Filter Widget.
-Added: WooCommerce Product Grid / List / Column View widget.
-Added: WooCommerce Product Comparison add-on.
-Added: Badge add-on.
-Added: Archive Products description Style + Hover style.
-Added: WooCommerce Category and Product List widget.
-Added: Product list widget.
-Added: Add button show/hide control in Cart table widget.
-Improved: Admin Dashboard bugfix & improvement.
-Improved: Archive Product widget Flash Sale Controls.
-Improved: Deal Product style controls.
-Improved: Compare icon, WooCommerce builder Quick view icon, Plugin icons, loading icon.
-Improved: Master switch label.
-Improved: WooCommerce Product Tabs reviews output.
-Improved: WooCommerce Product Tabs average rating CSS.
-Improved: Cart table widget background controls.
-Fixed: Widget visibility issue in editor panel.
-Fixed: Query problem in archive widget.
-Fixed: Issue fix on activating/deactivating add-on.
-Fixed: Some PHP notices.
-Fixed: Preview was not showing as expected in WooCommerce elementor editor.
-Fixed: Unwanted WooCommerce text removed from product rating.
-Fixed: Alignment issue fixed for WooCommerce Variation Swatches Add-on.
-Fixed: Console error fixed in case of no upsell in WooCommerce upsell widget.
-Fixed: Error fixed on recently viewed widget.
-
-Version 0.1.3-beta
-Added:    Woo wishlist add-on.
-Added:    more styling controls to almost all of the WooCommerce widgets.
-Improved: better UX in the admin panel and optimized the js and css code base.
-Improved:  now users can see only the associated WooCommerce builder widgets to the current template when in editor.
-Fixed:    fixed more than 20 known issues.
-
 Version 0.1.0-beta
 * Initial release
 
@@ -1098,11 +1064,10 @@ ShopEngine requires 2 plugins: Elementor and WooCommerce.
 No, ShopEngine WooCommerce Builder doesn’t require Elementor Pro. You can use all features of ShopEngine Woo bulder with Elemntor free version.
 
 = Can I use ShopEngine for Free? =
-Yes, absolutely you can use ShopEngine for free on your WooCommerce website. You can use 70+ useful widgets, 20+ add-on, and 40+ pre-built WooCommerce templates  of the ShopEngine free version to design stunning WooCommerce stores.
+Yes. ShopEngine free Woo Builder offers 70+ WooCommerce widgets, 20+ WooCommerce addons, and 40+ WooCommerce templates – shop page builder, WooCommerce cart page builder, checkout, and single product page layouts are all included.
 
 = Why should I choose ShopEngine WooCommerce builder PRO for my site? =
-You should choose ShopEngine Pro to build a fully functional WooCommerce website with necessary and dynamic features.
-ShopEngine Pro offers sufficient, user-friendly, and device-responsive widgets (70+), multiple WooCommerce addons (20+), and templates to build a complete WooCommerce website without even coding knowledge.
+ShopEngine Pro is the most complete Elementor WooCommerce Builder for store owners. Get 70+ WooCommerce widgets, 20+ Elementor addons for WooCommerce – Woo Wishlist, WooCommerce Quick View, Cross-Sell popup – and 40+ WooCommerce templates for shop page builder, WooCommerce cart page builder, and checkout. No code.
 
 = Do I need WooCommerce addons to enjoy ShopEngine Woo Builder? =
 You can enjoy all features of ShopEngine after installing WooCommerce and Elementor. You don’t need any other add-on to use the features of ShopEngine (Woo builder). However, you can install the ShopEngine Gutenberg add-on which offers Gutenberg-compatible widgets, addons, and templates to design your WooCommerce website.
@@ -1118,7 +1083,7 @@ Yes, you can create your own template with ShopEngine. ShopEgnie offers 2 option
 You can create a custom template by using the black template, then drag-and-drop the necessary widgets of ShopEngine(Woo builder).
 You can choose a template from ShopEngine’s template library to save you time and effort.
 
-= Is there a support center of ShopEngine( to guide me when needed? =
+= Is there a support center of ShopEngine to guide me when needed? =
 Yes, ShopEngine (Elementor WooCommerce Builder) has a 24/7 dedicated support team to help users with any issues or answer their queries.
 
 = Can I request new features for ShopEngine? =
